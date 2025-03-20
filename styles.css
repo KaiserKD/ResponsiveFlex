@@ -1,0 +1,90 @@
+
+
+
+#contenedorGeneral{
+	display:flex
+}
+header{
+	text-align:center;
+}
+
+#bloqueIzq{
+	margin-left:13px;
+	width:30%;
+	margin-top:40px;
+	
+}
+
+
+.barralateral{
+	font-family:Cambria;
+	color:white;
+	font-weight:bold;
+	font-size:80%;
+	
+	background-image:url("imagenes/header_barralat.png");
+	height:16px;
+}
+
+#imagenesIzq img {
+		width: 175px;
+		height: 60px;
+}
+/* bloque derecha */
+
+#bloquederecha{
+	margin: 0;
+    padding: 20px;
+    font-family: Cambria, serif;
+	width:65%
+}
+
+h2 {
+    font-family: Cambria, serif;
+    color: #189ED7;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imagen-noticia {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+
+
+p.texto {
+    font-family: Cambria, serif;
+    color: #181BD7;
+    font-size: 80%;
+    text-align: justify;
+    margin: 0 auto 12px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+ul {
+    font-family: Cambria, serif;
+    color: #181BD7;
+    font-size: 80%;
+    text-align: justify;
+    max-width: 1000px;
+    margin: 0 auto 20px auto;
+    padding: 0 40px;
+}
+
+footer{
+	text-align:center;
+}
+
+.textofooter{
+	text-align:center;
+	color:blue;
+}
+
+hr{
+	width:80%;
+}
