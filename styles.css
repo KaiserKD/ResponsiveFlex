@@ -48,9 +48,9 @@ h2 {
 
 .imagen-noticia {
     display: block;
-    margin: 20% auto;
+    margin: 20px auto;
     width: auto;
-    max-width: 100%;
+    max-width: 1000px;
     height: auto;
 }
 
