@@ -121,9 +121,14 @@ hr{
     }
 
     /* Bloque izquierdo y derecho ahora ocupan el 100% */
-    #bloqueIzq,
+    #bloqueIzq {
+	width: 30%;
+        margin: 0;
+        padding: 10px;
+    }
+	
     #bloquederecha {
-        width: 100%;
+        width: 60%;
         margin: 0;
         padding: 10px;
     }
