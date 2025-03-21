@@ -1,8 +1,8 @@
-
-
-
 #contenedorGeneral{
-	display:flex
+	display:flex;
+	  flex-direction: row; /* Alinea los hijos uno al lado del otro */
+    justify-content: space-between; /* Espacio entre los bloques */
+    align-items: flex-start; /* Alineación arriba */
 }
 header{
 	text-align:center;
@@ -87,4 +87,64 @@ footer{
 
 hr{
 	width:80%;
+}
+
+/* ====== MEDIA QUERY PARA TABLET (hasta 1024px de ancho) ====== */
+@media screen and (max-width: 1024px) {
+
+    /* Ajustar tamaños para mantener el diseño en dos columnas más estrechas */
+    #bloqueIzq {
+        width: 35%; /* Un poco más ancho porque hay menos espacio total */
+        margin-left: 10px; /* Reducimos margen izquierdo */
+    }
+
+    #bloquederecha {
+        width: 60%; /* Ajustamos el ancho del contenido */
+    }
+
+    /* Ajustes para imágenes y texto que se adapten al espacio */
+    .imagen-noticia,
+    p.texto,
+    ul {
+        max-width: 100%; /* Que no desborden */
+        padding: 0 15px; /* Reducimos padding lateral */
+    }
+}
+
+/* ====== MEDIA QUERY PARA MÓVIL (hasta 768px de ancho) ====== */
+@media screen and (max-width: 768px) {
+
+    /* Cambiar estructura: ahora una sola columna vertical */
+    #contenedorGeneral {
+        flex-direction: column; /* Coloca los bloques uno debajo del otro */
+        align-items: center; /* Centra los elementos */
+    }
+
+    /* Bloque izquierdo y derecho ahora ocupan el 100% */
+    #bloqueIzq,
+    #bloquederecha {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* Las imágenes del menú lateral se adaptan al ancho del móvil */
+    #imagenesIzq img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    /* Las imágenes de las noticias también se ajustan */
+    .imagen-noticia {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Ajustamos textos para buena legibilidad en pantallas pequeñas */
+    p.texto,
+    ul {
+        padding: 0 10px;
+        max-width: 100%;
+    }
 }
