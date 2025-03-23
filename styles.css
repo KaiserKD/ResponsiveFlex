@@ -1,40 +1,39 @@
-
-#contenedorGeneral{
-	display:flex
-}
-header{
-	text-align:center;
-}
-
-#bloqueIzq{
-	margin-left:13px;
-	width:30%;
-	margin-top:40px;
-	
+#contenedorGeneral {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
+header {
+    text-align: center;
+}
 
-.barralateral{
-	font-family:Cambria;
-	color:white;
-	font-weight:bold;
-	font-size:80%;
-	
-	background-image:url("imagenes/header_barralat.png");
-	height:16px;
+#bloqueIzq {
+    margin-left: 13px;
+    width: 30%;
+    margin-top: 40px;
+}
+
+.barralateral {
+    font-family: Cambria;
+    color: white;
+    font-weight: bold;
+    font-size: 80%;
+    background-image: url("imagenes/header_barralat.png");
+    height: 16px;
 }
 
 #imagenesIzq img {
-		width: 175px;
-		height: 60px;
+    width: 175px;
+    height: 60px;
 }
-/* bloque derecha */
 
-#bloquederecha{
-	margin: 0;
+#bloquederecha {
+    margin: 0;
     padding: 20px;
     font-family: Cambria, serif;
-	width:65%
+    width: 65%;
 }
 
 h2 {
@@ -51,8 +50,6 @@ h2 {
     max-width: 1000px;
     height: auto;
 }
-
-
 
 p.texto {
     font-family: Cambria, serif;
@@ -74,15 +71,63 @@ ul {
     padding: 0 40px;
 }
 
-footer{
-	text-align:center;
+footer {
+    text-align: center;
 }
 
-.textofooter{
-	text-align:center;
-	color:blue;
+.textofooter {
+    text-align: center;
+    color: blue;
 }
 
-hr{
-	width:80%;
+hr {
+    width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+    #bloqueIzq {
+        width: 35%;
+        margin-left: 10px;
+    }
+
+    #bloquederecha {
+        width: 60%;
+    }
+
+    .imagen-noticia,
+    p.texto,
+    ul {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #bloqueIzq {
+        width: 40%;
+        margin-left: 5px;
+        padding: 10px;
+    }
+
+    #bloquederecha {
+        width: 58%;
+        padding: 10px;
+    }
+
+    #imagenesIzq img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .imagen-noticia {
+        max-width: 100%;
+        height: auto;
+    }
+
+    p.texto,
+    ul {
+        padding: 0 10px;
+        max-width: 100%;
+    }
 }
