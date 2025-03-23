@@ -1,3 +1,4 @@
+
 #contenedorGeneral {
     display: flex;
     flex-direction: row;
@@ -51,14 +52,13 @@ h2 {
     height: auto;
 }
 
-p.texto {
+.texto {
     font-family: Cambria, serif;
     color: #181BD7;
     font-size: 80%;
     text-align: justify;
     margin: 0 auto 12px auto;
     max-width: 1000px;
-    padding: 0 20px;
 }
 
 ul {
@@ -84,7 +84,9 @@ hr {
     width: 80%;
 }
 
+/* TABLET */
 @media screen and (max-width: 1024px) {
+
     #bloqueIzq {
         width: 35%;
         margin-left: 10px;
@@ -102,7 +104,11 @@ hr {
     }
 }
 
+
+/* Celular */
+
 @media screen and (max-width: 768px) {
+
     #bloqueIzq {
         width: 40%;
         margin-left: 5px;
