@@ -136,4 +136,8 @@ hr {
         padding: 0 10px;
         max-width: 100%;
     }
+
+    input {
+        width: 100%;
+    }
 }
